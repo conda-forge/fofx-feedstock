@@ -1,5 +1,5 @@
 {% set name = "fofx" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/esheldon/fofx/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 57238dff5dfc2754d561b26784f7738cf7b75ffb9bbef1bb85cbec400ad19f52
+  sha256: 6b1c7f8c4d17b2a961011e97378e5291623502f577bdb21d0f08ce5f626af894
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
